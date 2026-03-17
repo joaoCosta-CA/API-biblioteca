@@ -5,8 +5,7 @@ import { NodePgDatabase } from 'drizzle-orm/node-postgres';
 import * as schema from '../db/schema';
 import { UpdateMemberDto } from './dto/update-member.dto';
 import { members } from '../db/schema';
-import { desc } from 'drizzle-orm';
-import { eq } from 'drizzle-orm';
+import { desc, eq } from 'drizzle-orm';
 
 @Injectable()
 export class MembersService {

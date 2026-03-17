@@ -12,7 +12,7 @@ async function mainMenu() {
     console.log('1. Listar Livros');
     console.log('2. Cadastrar Membro');
     console.log('3. Realizar Empréstimo');
-    console.log('4. DEVOLVER LIVRO'); // Nova opção
+    console.log('4. DEVOLVER LIVRO');
     console.log('5. Listar Empréstimos Ativos');
     console.log('6. Listar ATRASADOS')
     console.log('7. Sair');

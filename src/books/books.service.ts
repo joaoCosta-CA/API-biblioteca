@@ -1,11 +1,9 @@
-import { Injectable, Inject, NotFoundException } from '@nestjs/common';
+import { Injectable, Inject, NotFoundException, BadRequestException } from '@nestjs/common';
 import { CreateBookDto } from './dto/create-book.dto';
 import { UpdateBookDto } from './dto/update-book.dto';
 import { DRIZZLE } from 'src/db/db.module';
-import { desc } from 'drizzle-orm';
-import { eq } from 'drizzle-orm';
+import { desc, eq } from 'drizzle-orm';
 import { NodePgDatabase } from 'drizzle-orm/node-postgres';
-import { BadRequestException } from '@nestjs/common';
 import * as schema from '../db/schema';
 import { books } from '../db/schema';
 
